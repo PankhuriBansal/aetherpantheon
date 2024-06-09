@@ -1,0 +1,111 @@
+.section-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0px 20px !important;
+  overflow: hidden;
+
+  .section6-main-container {
+    max-width: 1440px;
+    margin: auto;
+    width: 100%;
+  }
+  .arches {
+    position: absolute;
+    margin-top: 120px;
+    width: 100%;
+  }
+  .testimonials {
+    margin-top: 110px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: var(
+      --cta-primary,
+      linear-gradient(91deg, #ffce00 1.78%, #04f8fc 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .people-say {
+    color: #fff;
+    text-align: center;
+    font-family: Clash Display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 100px;
+  }
+  .rectangle-box {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .content {
+      width: 684px;
+      color: #fff;
+      text-align: center;
+      font-family: Lexend;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 60px;
+    }
+    .writer {
+      color: var(--cta-secondary, #75fbfd);
+      font-family: Clash Display;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-top: 16px;
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-6 {
+    margin: auto;
+    .arches {
+      margin: auto;
+      padding-top: 50px;
+      max-height: 712px;
+    }
+    .testimonials {
+      font-size: 16px;
+    }
+    .people-say {
+      font-size: 24px;
+    }
+    .rectangle-box {
+      height: 100%;
+      width: 100%;
+      padding: 0px 20px !important;
+      .rect_img {
+        margin: auto;
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+      }
+      .content {
+        font-size: 12px;
+        // overflow-x: hidden;
+        width: 100%;
+      }
+      .writer {
+        font-size: 16px;
+      }
+    }
+  }
+}

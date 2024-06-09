@@ -1,0 +1,129 @@
+.section-3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 100px;
+  align-items: center;
+  .section3-main-container {
+    max-width: 1440px;
+    margin: auto;
+    width: 100%;
+    .ant-row {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .content-div {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .setting_mob {
+      display: none;
+    }
+    .setting {
+      margin-bottom: 30px;
+      display: flex;
+      width: 64px;
+      height: 64px;
+      padding: 16px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 16px;
+      border: 0.6px solid #f9f9f9;
+      background: radial-gradient(
+        92.97% 92.97% at 50% 50%,
+        rgba(255, 255, 255, 0.15) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+    .processing {
+      color: #fff;
+      font-family: Lexend;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 27px; /* 75% */
+    }
+    .content {
+      color: #fff;
+      font-family: Lexend;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      max-width: 375px;
+    }
+  }
+  .iphone {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: -100px;
+  }
+  .section_3_mob {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-3 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: var(--height-control-height-lg, 40px) 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 18px;
+    .section3-main-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .ant-row {
+        display: block;
+      }
+    }
+    .image_col {
+      .section3_comb_desk {
+        display: none !important;
+      }
+      .section_3_mob {
+        display: block !important;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .content-div {
+      margin-top: 30px !important;
+      display: flex;
+      max-width: 388px;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      .heading_div {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+      }
+      .processing {
+        font-family: Lexend;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+      }
+      .content {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+      }
+      .setting {
+        display: none;
+      }
+      .setting_mob {
+        display: flex;
+      }
+    }
+  }
+}

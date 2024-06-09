@@ -1,0 +1,189 @@
+.slider {
+  overflow: hidden;
+
+  .images-div {
+    display: flex;
+    width: 100%;
+    padding-left: 0px;
+    align-items: flex-start;
+    gap: 20px;
+    margin: auto;
+
+    .image-box {
+      height: auto;
+      gap: 20px;
+      display: flex;
+      padding: var(--height-control-height-lg, 40px);
+      justify-content: center;
+      align-items: center;
+      border-radius: 16px;
+      border: 0.6px solid #f9f9f9;
+      background: radial-gradient(
+        99.02% 129.94% at 50% 50%,
+        rgba(255, 255, 255, 0.15) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+    .inner-image-box {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      .name-txt {
+        color: var(--Primary-white, #fff);
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: Clash Display;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+      }
+      .content {
+        max-width: 276px;
+        overflow: hidden;
+        color: var(--Primary-white, #fff);
+        font-feature-settings: "clig" off, "liga" off;
+        text-overflow: ellipsis;
+        font-family: Lexend !important;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+.carousel-button-group {
+  position: absolute;
+  top: 90%;
+  display: flex;
+  max-width: 0px !important;
+  .nextBtn {
+    position: absolute;
+    bottom: -150px;
+    right: -49vw;
+    cursor: pointer;
+    background: var(
+      --glass-1,
+      linear-gradient(
+        180deg,
+        rgba(65, 65, 65, 0.4) 0%,
+        rgba(65, 65, 65, 0) 100%
+      )
+    );
+  }
+  .backBtn {
+    position: absolute;
+    bottom: -150px;
+    left: 44vw;
+    cursor: pointer;
+    background: var(
+      --glass-1,
+      linear-gradient(
+        180deg,
+        rgba(65, 65, 65, 0.4) 0%,
+        rgba(65, 65, 65, 0) 100%
+      )
+    );
+  }
+}
+
+.react-multiple-carousel__arrow {
+  display: none;
+}
+
+.react-multi-carousel-list .react-multi-carousel-track {
+  margin-top: 120px;
+}
+.react-multi-carousel-list {
+  overflow: visible !important;
+}
+@media screen and (max-width: 767px) {
+  .slider {
+    width: 184px;
+    margin-left: 10px;
+    .images-div {
+      height: auto;
+      width: auto;
+      .image-box {
+        margin: auto;
+        height: auto;
+        width: 100%;
+        padding: 16px;
+        .inner-image-box {
+          display: flex;
+          width: auto;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: var(--space-padding-padding-sm, 12px);
+          align-self: stretch;
+        }
+        .name-txt {
+          overflow: hidden;
+          font-size: 16px;
+          width: auto;
+        }
+        .content {
+          text-overflow: ellipsis;
+          font-family: Lexend;
+          font-size: 10px;
+        }
+        .carousel_img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .react-multi-carousel-item {
+    width: auto !important;
+    margin: auto !important;
+    gap: 10px !important;
+  }
+
+  .react-multi-carousel-list {
+    overflow: visible !important;
+  }
+  .react-multi-carousel-list .react-multi-carousel-track {
+    margin-top: 10px !important;
+  }
+
+  .carousel-button-group {
+    position: absolute;
+    top: 115%;
+    display: flex;
+
+    .nextBtn {
+      background: var(
+        --glass-1,
+        linear-gradient(
+          180deg,
+          rgba(65, 65, 65, 0.4) 0%,
+          rgba(65, 65, 65, 0) 100%
+        )
+      );
+      position: absolute;
+      bottom: 0px;
+      left: 40vw !important;
+      cursor: pointer;
+      transform: rotate(180deg) !important;
+    }
+    .backBtn {
+      background: var(
+        --glass-1,
+        linear-gradient(
+          180deg,
+          rgba(65, 65, 65, 0.4) 0%,
+          rgba(65, 65, 65, 0) 100%
+        )
+      );
+      position: absolute;
+      bottom: 0px;
+      left: 50vw !important;
+      cursor: pointer;
+      transform: rotate(180deg) !important;
+    }
+  }
+}

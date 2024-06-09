@@ -1,0 +1,148 @@
+.section-2 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+  .description-text-smallscreen {
+    display: none;
+  }
+  .section2_main-container {
+    max-width: 1240px;
+    margin: auto;
+    width: 100%;
+    min-height: 900px;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-image: url("../../Assets/eclipsebg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .center-div {
+    border-radius: 590px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: linear-gradient(
+      143deg,
+      rgba(255, 232, 138, 0.5) 8.37%,
+      rgba(0, 255, 255, 0) 91.49%
+    );
+
+    // filter: blur(150px);
+    .content {
+      color: #fff;
+      text-align: center;
+      font-family: Lexend;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      letter-spacing: 0.6px;
+      max-width: 475px;
+    }
+    .features {
+      text-align: center;
+      font-family: Lexend;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      background: var(
+        --cta-primary,
+        linear-gradient(91deg, #ffce00 1.78%, #04f8fc 100%)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .revolution {
+      max-width: 533px;
+      width: 100%;
+      color: var(--Primary-white, #fff);
+      text-align: center;
+      font-family: Clash Display;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+}
+
+.column-1 {
+  width: auto;
+  // height: 100%;
+  position: absolute;
+  left: 0;
+}
+.column_2 {
+  // height: 100%;
+  width: auto;
+  position: absolute;
+  right: 0;
+}
+.col1_mob {
+  display: none;
+}
+
+.col2_mob {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .section2_main-container {
+    min-height: 380px !important;
+    .description-text-bigscreen {
+      display: none;
+    }
+    .description-text-smallscreen {
+      margin-top: 10px;
+      display: block;
+    }
+  }
+  .center-div {
+    max-width: 224px;
+    width: 100%;
+    gap: 10px !important;
+    .content {
+      font-family: Lexend;
+      font-size: 12px !important;
+      font-weight: 300;
+    }
+    .features {
+      max-width: 223px;
+      width: 100%;
+      font-size: 16px !important;
+    }
+
+    .revolution {
+      text-align: center;
+      font-family: Clash Display;
+      font-size: 24px !important;
+    }
+  }
+
+  .column-1 {
+    display: none;
+  }
+  .column_2 {
+    display: none;
+  }
+  .col2_mob {
+    display: block;
+    right: 0;
+    position: absolute;
+  }
+  .col1_mob {
+    display: block;
+    position: absolute;
+    left: 0;
+  }
+}

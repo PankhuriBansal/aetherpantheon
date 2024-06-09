@@ -19,6 +19,7 @@ const SEO = ({ title, description, keyword }) => {
       />
       <meta property="og:type" content="website" />
       <meta property="og:image" content={defaultImage?.src} />
+      <script src="https://assets.adobedtm.com/6196ef54ab10/23bf6855542d/launch-8b619e00e62a-development.min.js" async></script>
     </Head>
   );
 };
